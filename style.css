@@ -24,8 +24,8 @@ header {
     background-image: url(assets/Background.png);
     background-repeat: no-repeat;
     background-size: 164vw;
+    aspect-ratio: 10/7;
     background-position: right top;
-    height: 600px;
 }
 
 header > section {
@@ -34,31 +34,207 @@ header > section {
     text-align: center;
     align-items: center;
     padding: 8%;
-    gap: 10px;
 }
 
 header > section > img {
     width: 70%;
+    padding-bottom: 54px;
 }
 
 header > section > div {
     width: 70%;
-    border: 1px solid var(--cor-texto);
     border-radius: 8px;
     padding: 16px;
     box-sizing: border-box;
 }
 
-header > section > div.botao-combo {
+div.botao-combo {
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
     background-color: var(--cor-botao-destaque);
-    border: none;
+    margin-bottom: 16px;
+}
+
+div.botao-combo:hover, div.botao-combo:hover > a {
+    background-color: var(--cor-texto);
+    color: var(--cor-botao-destaque);
+}
+
+div.botao-combo > a {
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+header > section > div.botao-solo {
+    border: 1px solid var(--cor-texto);
+    margin-bottom: 10px;
+}
+
+header > section > div.botao-solo:hover {
+    background-color: var(--cor-texto);
+    color: var(--cor-botao-destaque);
 }
 
 header > section > p {
     font-size: 0.75em;
+    margin-bottom: 10px;
 }
 
 header > section > p.chamada {
     font-size: 1.75em;
     font-weight: bold;
+    margin-bottom: 22px;
 } 
+
+main > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 16px;
+    margin-bottom: 70px;
+    
+}
+
+main > section > h2, img, div, p {
+    margin-bottom: 20px;
+}
+
+main > section.reverse {
+    flex-direction: column-reverse;
+}
+
+main > section.reverse div.botao-combo {
+    width: 170px;
+    text-align: center;
+}
+
+main > section.dispositivos {
+    width: 93%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+main > section > img.imagem-conteudo {
+    width: 75%;
+}
+
+.container-dispositivos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.container-dispositivos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-dispositivos img {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+footer img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
+nav > a{
+    font-size: 0.7em;
+    text-decoration: none;
+    color: var(--cor-texto);
+    margin: 5px;
+}
+
+nav > a:hover {
+    color: var(--cor-botao-destaque);
+}
+
+footer p {
+    font-size: 0.7em;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    header {
+        background-size: 100%;
+        aspect-ratio: 10/5;
+    }
+
+    header > section {
+        max-width: 356px;
+        padding: 2% 0 0 2%;
+    }
+
+     header > section > img{
+        max-width: 356px;
+        margin-bottom: -25px;
+    }
+
+     header > section > div {
+        width: 100%;
+        max-width: 400px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > section {
+        flex-direction: row;
+        height: 600px;
+    }
+
+    main > section.reverse {
+        flex-direction: row;
+    }
+
+    main > section img{
+        margin: 15px;
+        max-width: 500px;
+    }
+
+    main > section div.paragrafo > h2 {
+        font-size: 2em;
+        text-align: left;
+    }
+    
+    main > section div.paragrafo > p {
+        font-size: 0.75em;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    main > section.dispositivos {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    main > section.dispositivos > h2 {
+        font-size: 2em;
+    }
+}
