@@ -104,6 +104,7 @@ main > section > h2, img, div, p {
 
 main > section.reverse {
     flex-direction: column-reverse;
+    align-items: center;
 }
 
 main > section.reverse div.botao-combo {
