@@ -107,6 +107,12 @@ main > section.reverse {
     align-items: center;
 }
 
+div.paragrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main > section.reverse div.botao-combo {
     width: 170px;
     text-align: center;
