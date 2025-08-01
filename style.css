@@ -125,7 +125,8 @@ main > section.dispositivos {
 }
 
 main > section > img.imagem-conteudo {
-    width: 75%;
+    width: 65%;
+    max-width: 500px;
 }
 
 .container-dispositivos {
