@@ -247,4 +247,8 @@ footer p {
     main > section.dispositivos > h2 {
         font-size: 2em;
     }
+
+    nav {
+        flex-direction: row;
+    }
 }
