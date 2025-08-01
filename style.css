@@ -37,12 +37,12 @@ header > section {
 }
 
 header > section > img {
-    width: 75%;
-    padding-bottom: 54px;
+    width: 85%;
+    padding-bottom: 25px;
 }
 
 header > section > div {
-    width: 75%;
+    width: 85%;
     border-radius: 8px;
     padding: 16px;
     box-sizing: border-box;
